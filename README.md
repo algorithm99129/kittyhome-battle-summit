@@ -1,6 +1,6 @@
 # kittyhome-battle-summit
 
-The **⛰️ Summit Rush** server of the KittyHome Battle Arena: king of the hill: the first team to hold the glowing top for 5 seconds wins; yarn, shoves and boulders knock cats down the slope.
+The **🏙️ Summit Rush** server of the KittyHome Battle Arena: a tussle on the rooftops. Pick up things (flowerpots, bricks, crates) and throw them, pick up cats and throw them off the roofs; a carried cat can wriggle free; two jumps reach the higher roofs. Most knockouts wins.
 
 Each Battle Arena game runs on its own server, so a busy game never slows down the Grid (core) or the
 other games. This one runs Summit Rush only, in as many rooms as people need: a newcomer goes to the busiest
