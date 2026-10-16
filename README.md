@@ -1,4 +1,4 @@
-# kittyhome-battle-summit
+# kittyhome.battle.summit
 
 The **🏙️ Summit Rush** server of the KittyHome Battle Arena: a tussle on the rooftops. Pick up things (flowerpots, bricks, crates) and throw them, pick up cats and throw them off the roofs; a carried cat can wriggle free; two jumps reach the higher roofs. Most knockouts wins.
 
@@ -18,8 +18,8 @@ they've been empty for a minute.
 - **Core finds it** through its heartbeat: every 2 seconds it writes its `PUBLIC_URL` and rooms to
   `arena_servers`. The gateway and the arena page's "Choose your battle" read that from core; when the
   heartbeat stops, the game shows as offline.
-- **The code** is in `src/shared/`, copied from kittyhome-shared (the battle engine, the database,
-  sessions, the economy). Don't edit it here: change `shared/` in the parent repo and run
+- **The code** is in `src/shared/`, copied from kittyhome.shared (the battle engine, the database,
+  sessions, the economy). Don't edit it here: change `packages/shared/` in the parent repo and run
   `npm run sync:shared` there. `src/index.ts` just starts the server for Summit Rush.
 
 ## Running it
@@ -36,7 +36,7 @@ Or from the parent repo, everything together: `npm run dev`.
 
 - Run behind HTTPS at its own address (e.g. `https://kittyhome-battle-summit.onrender.com`) and set
   `PUBLIC_URL` to exactly that: core tells the community where this game is from it.
-- `CLIENT_ORIGINS=https://community.kittyhome.org`
+- `CLIENT_ORIGINS=https://fun.kittyhome.org`
 - The same `MONGODB_URI`, `MONGODB_DB` and `HAPPY_HOUR_UTC` as core.
 - `npm run build && npm start`. On stopping (SIGTERM) it takes itself off the gateway first.
 
